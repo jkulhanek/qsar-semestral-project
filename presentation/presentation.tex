@@ -41,6 +41,20 @@
     \item Published by Milano Chemometrics and QSAR Research Group
     \item 41 attributes in total, some real valued, other integer valued
     \item Number of proteins in the dataset is 1055
+    \item Class 0 is bio-degradable
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Method}
+  \begin{itemize}
+    \item Multi Layered Perceptron (2 layers)
+    \item 40 neurons in the hidden layer
+    \item ReLU activation function
+    \item trained as logistic regression with NLL loss and sigmoid activation function
+    \item optimized using Adam TODO: add citation
+    \item used dropout (0.5) and weight decay (0.01) for regularization TODO: add citatoin
+    \item trained for 200 epochs
   \end{itemize}
 }
 
@@ -54,6 +68,15 @@
   \includegraphics[width=\linewidth]{mlp}
 }
 
+\frame{
+  \frametitle{Confusion matrix}
+  \includegraphics[width=\linewidth]{conf}
+}
+
+\frame{
+  \frametitle{Precision recall}
+  \includegraphics[width=\linewidth]{pr}
+}
 \frame{
   \frametitle{Our results and comparisons}
   \begin{table}[]
