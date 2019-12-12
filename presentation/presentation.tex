@@ -36,31 +36,22 @@
 \frame{
   \frametitle{QSAR biodegradation dataset\cite{dataset}}
   \begin{itemize}
-    \item classification dataset where the task is to predict whether a protein is bio-degradable based on its chemical properties
-    \item published by Milano Chemometrics and QSAR Research Group
+    \item Dataset from OpenML: \href{https://www.openml.org/d/1494}{qsar-biodeg}
+    \item Classification dataset where the task is to predict whether a protein is bio-degradable based on its chemical properties
+    \item Published by Milano Chemometrics and QSAR Research Group
     \item 41 attributes in total, some real valued, other integer valued
-    \item number of proteins in the dataset is 1055
-  \end{itemize}
-}
-
-\frame{
-  \frametitle{Outline}
-  \begin{itemize}
-    \item 3D environment simulators
-    \item base algorithm
-      \note{\textbf{base algorithm} \\ \hspace{2em}algorithm based on a2c, a3c will be discussed with improvements \\}
-    \item our method
-      \note{\textbf{our method} \\ \hspace{2em}improve on the base algorithm, discuss the network architecture \\}
-    \item experiments
-      \note{\textbf{experiments} \\ \hspace{2em}experiments we have done will be presented \\}
-    \item conclusions \& future work
-      \note{\textbf{conclusions \& future work} \\ \hspace{2em}discussion, quality of this method, future work \\}
+    \item Number of proteins in the dataset is 1055
   \end{itemize}
 }
 
 \frame{
   \frametitle{Single layer network training}
   \includegraphics[width=\linewidth]{logreg}
+}
+
+\frame{
+  \frametitle{Two layers network training}
+  \includegraphics[width=\linewidth]{mlp}
 }
 
 \frame{
