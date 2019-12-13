@@ -60,8 +60,9 @@
     \item ReLU activation function
     \item trained as logistic regression with NLL loss and sigmoid activation function
     \item optimized using Adam \cite{Adam}
-    \item used dropout (0.5) and weight decay (0.01) for regularization \cite{dropout}
-    \item trained for 200 epochs
+    \item experimented with dropout (0.5) \cite{dropout}
+    \item weight decay (0.0045) for regularization 
+    \item trained for 120 epochs
   \end{itemize}
 }
 
@@ -91,10 +92,10 @@
       \hline
       \textbf{Method}                                             & \textbf{Predictive accuracy} \\ \hline
       \texttt{svm.classes.SVC}                   & 89.19\%                      \\ \hline
-      \textbf{Ours - 2 layers} & \textbf{89.12\%}             \\ \hline
+      \textbf{Ours - 2 layers} & \textbf{87.76\%}             \\ \hline
       \texttt{xgboost}                           & 87.68\%                      \\ \hline
       \texttt{weka.RandomForest}                 & 86.67\%                      \\ \hline
-      \textbf{Ours - 1 layer}  & \textbf{85.96\%}             \\ \hline
+      \textbf{Ours - 1 layer}  & \textbf{85.12\%}             \\ \hline
       \texttt{weka.VotedPerceptron}              & 79.43\%                      \\ \hline
       \texttt{weka.NaiveBayes}                   & 75.64\%                      \\ \hline
       \texttt{neural\_network.MLPClassifier}     & 66.26\%                      \\ \hline
