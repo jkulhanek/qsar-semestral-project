@@ -17,6 +17,13 @@
 \usetikzlibrary{fit}
 \usetikzlibrary{arrows}
 \usetikzlibrary{positioning}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
 
 \title{QSAR biodegradation dataset classification using neural networks}
 \author{Jonáš Kulhánek, Jan Uhlík}
@@ -34,7 +41,7 @@
   \titlepage
 }
 \frame{
-  \frametitle{QSAR biodegradation dataset\cite{dataset}}
+  \frametitle{QSAR biodegradation dataset \cite{dataset}}
   \begin{itemize}
     \item Dataset from OpenML: \href{https://www.openml.org/d/1494}{qsar-biodeg}
     \item Classification dataset where the task is to predict whether a protein is bio-degradable based on its chemical properties
@@ -52,8 +59,8 @@
     \item 40 neurons in the hidden layer
     \item ReLU activation function
     \item trained as logistic regression with NLL loss and sigmoid activation function
-    \item optimized using Adam TODO: add citation
-    \item used dropout (0.5) and weight decay (0.01) for regularization TODO: add citatoin
+    \item optimized using Adam \cite{Adam}
+    \item used dropout (0.5) and weight decay (0.01) for regularization \cite{dropout}
     \item trained for 200 epochs
   \end{itemize}
 }
